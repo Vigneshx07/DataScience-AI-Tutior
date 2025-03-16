@@ -12,7 +12,7 @@ from fpdf import FPDF
 
 # ✅ Securely Load API Key
 load_dotenv()
-API_KEY = os.getenv("AIzaSyCHGvCV_UsrQLx8EZrb58IQ9qqQEyRNcYI")
+API_KEY = os.getenv("GEMINI_API_KEY")
 if not API_KEY:
     st.error("⚠️ Google GenAI API key is missing! Add it to `.env`.")
     st.stop()
